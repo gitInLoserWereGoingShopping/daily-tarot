@@ -5,4 +5,36 @@
 
 .App {
   font-family: PAPYRUS;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: minmax(1fr, 500px); */
+}
+
+.body {
+  font-size: 100%;
+}
+
+.spreadInterpretation {
+  font-size: 4vw;
+}
+
+.tarotCardGroup {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 15px;
+  font-size: 0.7em;
+}
+
+@media (max-width: 400px) {
+  .spreadInterpretation {
+    font-size: 3vw;
+  }
+  .tarotCardGroup {
+    display: grid;
+    grid-template-columns: minmax(100px, 100px);
+    gap: 15px;
+    font-size: 0.7em;
+    justify-content: center;
+  }
 }
