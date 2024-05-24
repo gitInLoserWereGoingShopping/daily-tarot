@@ -40,6 +40,19 @@ const dailyTarotSpreads = {
         }],
         spreadInterpretation: 'This reading suggests a need for balance and adaptability in your life. Rely on your inner strength and compassion to navigate challenges and find harmony.',
     },
+    20240524: {
+        cards: [{
+            name: 'Strength',
+            meaning: 'Inner power, courage, and compassion',
+        },{
+            name: 'Queen of Swords',
+            meaning: 'Intellectual clarity, sharp communication',
+        },{
+            name: 'Ten of Pentacles',
+            meaning: 'Family, legacy, financial security',
+        }],
+        spreadInterpretation: 'This trio suggests a strong, compassionate individual who excels in communication and enjoys a stable, secure life',
+    },
 }
 
 const getDailyTarotSpread = (YYYYMMDD) => {
