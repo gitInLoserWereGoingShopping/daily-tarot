@@ -53,6 +53,19 @@ const dailyTarotSpreads = {
         }],
         spreadInterpretation: 'This trio suggests a strong, compassionate individual who excels in communication and enjoys a stable, secure life',
     },
+    20240525: {
+        cards: [{
+            name: 'Queen of Wands',
+            meaning: 'Passionate, creative, inspiring leader',
+        },{
+            name: 'Five of Wands',
+            meaning: 'Conflict, competition, differing opinions',
+        },{
+            name: 'The Hanged Man',
+            meaning: 'Sacrifice, new perspectives, letting go',
+        }],
+        spreadInterpretation: 'Overall this combination suggests a passionate individual facing challenges and conflicts. Embrace new perspectives and let go of old ways to find a path forward',
+    },
 }
 
 const getDailyTarotSpread = (YYYYMMDD) => {
