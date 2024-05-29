@@ -53,6 +53,19 @@ const dailyTarotSpreads = {
         }],
         spreadInterpretation: 'This trio suggests a strong, compassionate individual who excels in communication and enjoys a stable, secure life',
     },
+    20240529: {
+        cards: [{
+            name: 'Four of Swords',
+            meaning: 'rest, recuperation, and contemplation are needed',
+        },{
+            name: 'Queen of Wands',
+            meaning: 'Passionate, creative, and inspiring energy',
+        },{
+            name: 'Ace of Swords',
+            meaning: 'New ideas, mental clarity, and a breakthrough',
+        }],
+        spreadInterpretation: 'This reading suggests a period of rest and reflection is necessary before pursuing new ideas and creative endeavors with passion and clarity',
+    },
 }
 
 const getDailyTarotSpread = (YYYYMMDD) => {
