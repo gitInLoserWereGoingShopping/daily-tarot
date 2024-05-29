@@ -65,6 +65,7 @@ const dailyTarotSpreads = {
             meaning: 'New ideas, mental clarity, and a breakthrough',
         }],
         spreadInterpretation: 'This reading suggests a period of rest and reflection is necessary before pursuing new ideas and creative endeavors with passion and clarity',
+    },
     20240525: {
         cards: [{
             name: 'Queen of Wands',
