@@ -65,6 +65,18 @@ const dailyTarotSpreads = {
             meaning: 'New ideas, mental clarity, and a breakthrough',
         }],
         spreadInterpretation: 'This reading suggests a period of rest and reflection is necessary before pursuing new ideas and creative endeavors with passion and clarity',
+    20240525: {
+        cards: [{
+            name: 'Queen of Wands',
+            meaning: 'Passionate, creative, inspiring leader',
+        },{
+            name: 'Five of Wands',
+            meaning: 'Conflict, competition, differing opinions',
+        },{
+            name: 'The Hanged Man',
+            meaning: 'Sacrifice, new perspectives, letting go',
+        }],
+        spreadInterpretation: 'Overall this combination suggests a passionate individual facing challenges and conflicts. Embrace new perspectives and let go of old ways to find a path forward',
     },
 }
 

@@ -1,0 +1,18 @@
+.tarotCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: chartreuse;
+    gap: 0.5em;
+}
+
+.tarotCardTitle {
+    /* font-size: 10px; */
+    border: 3px solid red;
+}
+
+.tarotCardMeaning {
+    font-size: 2vw;
+    border: 3px solid blue;
+    padding: 5px;
+}
