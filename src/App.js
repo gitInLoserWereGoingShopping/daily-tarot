@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+//hooks
+import useMouseMovement from './hooks/useMouseMovement';
+
 //components
 import DaySelector from './components/DaySelector';
 import TarotCard from './components/TarotCard';
@@ -8,6 +11,7 @@ import TarotCard from './components/TarotCard';
 import getDailyTarotReadings from './data';
 
 function App() {
+  const mousePosition = useMouseMovement();
   const [daySelected, setDaySelected] = React.useState('YYYYMMDD');
   const [dailySpread, setDailySpread] = React.useState(getDailyTarotReadings(daySelected) || {
     cards: [{
@@ -29,10 +33,16 @@ function App() {
     setDailySpread(newDailyTarotSpread);
   }, [daySelected]);
 
-  console.log(dailySpread);
-  console.log('day selected to be used for fetching tarot daily spread data:\n', daySelected);
+  //move Gigi along with cursor
+  React.useEffect(() => {
+    const Gigi = document.getElementById('Gigi');
+    Gigi.style.left = `${mousePosition.x + 11 || 0}px`; 
+    Gigi.style.top = `${mousePosition.y || 0}px`;
+  }, [mousePosition]);
+
   return (
-    <div className="App">
+    <div className='App'>
+      <img id='Gigi' src='http://localhost:3002/gigi.png' alt='gigi the cat'></img>
       <DaySelector setDaySelected={setDaySelected}/>
       <div className='spreadInterpretation'>{typeof dailySpread?.spreadInterpretation === 'string'
         ? <div>{dailySpread.spreadInterpretation}</div>
