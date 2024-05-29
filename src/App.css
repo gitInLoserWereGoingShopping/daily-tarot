@@ -8,11 +8,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* grid-template-columns: minmax(1fr, 500px); */
 }
 
 .body {
   font-size: 100%;
+}
+
+#Gigi {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  position: absolute;
 }
 
 .spreadInterpretation {
