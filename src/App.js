@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className='App'>
-      <img id='Gigi' src='http://localhost:3002/gigi.png' alt='gigi the cat'></img>
+      <img id='Gigi' src='./gigi.png' alt='gigi the cat'></img>
       <DaySelector setDaySelected={setDaySelected}/>
       <div className='spreadInterpretation'>{typeof dailySpread?.spreadInterpretation === 'string'
         ? <div>{dailySpread.spreadInterpretation}</div>
